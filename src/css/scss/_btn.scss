@@ -1,0 +1,51 @@
+.btn-main {
+  padding: 10px 20px;
+  background-color: var(--main);
+  border: 2px solid var(--main) !important;
+  color: var(--white) !important;
+  border: none;
+  border-radius: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  font-weight: 300;
+  transition: all 0.3s linear;
+  span {
+    color: var(--white) !important;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  svg {
+    display: flex;
+    vertical-align: middle;
+    path {
+      fill: var(--white);
+    }
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active,
+  &:focus,
+  &:visited {
+    opacity: 1;
+  }
+}
+
+.btn-rev {
+  padding: 10px 20px;
+  border: 2px solid var(--main) !important;
+  color: var(--main);
+  border: none;
+  border-radius: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    background-color: var(--main);
+    color: var(--white);
+    opacity: 0.8;
+  }
+}

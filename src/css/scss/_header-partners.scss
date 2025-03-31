@@ -1,0 +1,20 @@
+.navbar__partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  // background-color: var(--white);
+  padding: 20px 50px;
+  transition: all 0.3s ease;
+  .navbar__partner {
+    position: relative;
+    z-index: 12;
+  }
+  .navbar__partners__ornament {
+    position: absolute;
+    z-index: 0;
+    // top: 0px;
+    bottom: -15px;
+    transition: all 0.3s ease-in !important;
+  }
+}

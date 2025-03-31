@@ -1,0 +1,23 @@
+.navbar__brand {
+  max-width: 225px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  align-self: flex-start;
+  margin-right: 50px;
+  transition: all 0.3s ease;
+  a {
+    // position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+
+    svg {
+      position: absolute;
+      left: 50px;
+      top: 20px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
