@@ -253,16 +253,17 @@ $display_socialmedia = get_theme_mod('footer_display_socialmedia', false);
             <?php endif; ?>
         <?php endfor; ?>
 
-        <div class="f-col">
+        <!-- <div class="f-col">
             <?php if ($display_socialmedia) : ?>
                 <div class="h-social__wrap">
                     <h5>Social media</h5>
                     <span>Znajdź nas w mediach
                         społecznościowych</span>
-                    <?php get_template_part('templates-parts/parts/social_media'); ?>
+                    <? php // get_template_part('templates-parts/parts/social_media'); 
+                    ?>
                 </div>
             <?php endif; ?>
-        </div>
+        </div> -->
     </div>
 
     <svg id="f-ornament" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1276.44 420.75">
