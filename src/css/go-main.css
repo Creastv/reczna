@@ -666,7 +666,6 @@ body.archive .entry-header h1 {
   position: relative;
   z-index: 999;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 15px;
   background: linear-gradient(90deg, #221b48 0%, #191956 32%, #02167a 94%, #00167f 100%);

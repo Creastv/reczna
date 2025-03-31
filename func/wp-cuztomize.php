@@ -12,6 +12,7 @@ function register_social_media_settings($wp_customize)
         'instagram' => __('Instagram', 'go'),
         'facebook' => __('Facebook', 'go'),
         'youtube' => __('youtube', 'go'),
+        'tiktok' => __('Ticktock', 'go'),
 
     ];
 
