@@ -1296,63 +1296,93 @@ body.single .entry-content a {
   opacity: 0.8;
 }
 
-label {
-  margin-bottom: 10px;
+.form-wrap {
   display: flex;
-}
-label > span {
-  display: block;
-}
-
-input,
-select {
-  padding: 10px;
-  border-radius: 0px !important;
-  margin: 10px 20px;
-  background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--gray);
-}
-
-textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border-radius: 0px;
-  background-color: var(--white);
-  color: var(--black);
-  margin: 5px 0;
-  border: 1px solid var(--gray);
-}
-
-.wpcf7-submit {
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
-  width: 100%;
-  max-width: 200px;
-  margin-top: 10px;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
 }
 @media only screen and (max-width: 768px) {
-  .wpcf7-submit {
+  .form-wrap {
     max-width: 100%;
   }
 }
 
-.wpcf7-acceptance label {
-  font-size: 12px;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-}
-.wpcf7-acceptance label input {
-  width: 20px;
+.form-wrap p {
+  line-height: 1.1;
+  margin-bottom: 5px;
 }
 
-.wpcf7-spinner {
+.form-wrap h3 {
+  font-size: 16px !important;
+  text-transform: uppercase;
+}
+
+.form-wrap .group-form {
+  display: flex;
+  gap: 10px;
+}
+
+.form-wrap .group-form .col-1 {
+  width: calc(100% - 0px);
+}
+
+.form-wrap .group-form .col-2 {
+  width: calc(50% - 5px);
+}
+
+.form-wrap .group-form input,
+.group-form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+input,
+textarea {
+  margin: 0px !important;
+  border: none;
+  border-bottom: 1px solid var(--main);
+  width: 100%;
+}
+
+.wpcf7-form-control-wrap {
+  width: 100%;
+  display: block;
+}
+
+.zgoda span {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.zgoda p {
+  line-height: 1 !important;
+}
+
+.zgoda label {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.zgoda input {
+  width: initial !important;
+  margin: 0px !important;
+}
+
+.form-wrap .wpcf7-submit {
+  background-color: var(--main) !important;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.form-wrap .wpcf7-spinner {
   position: absolute;
+  z-index: 33;
+  top: 2px;
 }
 
 .wpcf7-not-valid-tip {
@@ -1362,76 +1392,19 @@ textarea {
   display: block;
 }
 
-.row-form {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row-form .col-1 {
+.wpcf7-submit {
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
   width: 100%;
-  padding: 0 10px;
+  margin-top: 10px;
 }
 @media only screen and (max-width: 768px) {
-  .row-form .col-1 {
-    width: 100%;
+  .wpcf7-submit {
+    max-width: 100%;
   }
-}
-.row-form .col-2 {
-  width: 50%;
-  padding: 0 10px;
-}
-@media only screen and (max-width: 768px) {
-  .row-form .col-2 {
-    width: 100%;
-  }
-}
-.row-form .col-btn {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 10px;
-}
-
-.select2-container--default .select2-selection--single {
-  border: none !important;
-  border-radius: 6px;
-  min-height: 40px;
-}
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-  padding-top: 5px;
-  font-size: 14px;
-  color: var(--black);
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-  margin-top: 13px;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 100% !important;
-  right: 7px !important;
-}
-
-.select2-container--default .select2-results__option--highlighted[aria-selected],
-.select2-container--default .select2-results__option--highlighted[data-selected] {
-  background-color: var(--main) !important;
-}
-
-.select2-results__option {
-  font-size: 14px !important;
-  line-height: 14px !important;
-}
-
-.select2-dropdown {
-  border-color: var(--gray) !important;
-}
-
-.select2-container--default .select2-selection--single {
-  border-radius: 100px !important;
-  padding: 0 10px;
-}
-
-#woocommerce-ordering-select,
-#products_per_page {
-  display: none;
 }
 
 .posts-wraper {
