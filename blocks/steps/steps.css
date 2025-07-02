@@ -13,14 +13,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
 }
-@media only screen and (max-width: 768px) {
-  .b-steps {
-    gap: 10px;
-  }
-}
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 998px) {
   .b-steps {
     flex-wrap: wrap;
     gap: 0;
@@ -37,17 +31,22 @@
   height: 5px;
   background-color: #f4f4f4;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 998px) {
   .b-steps:before {
     display: none;
   }
 }
 .b-steps .b-step {
   position: relative;
-  width: 33.33%;
+  width: 16.66%;
   padding: 0 20px;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 998px) {
+  .b-steps .b-step {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
   .b-steps .b-step {
     width: 100%;
   }
@@ -87,7 +86,7 @@
 }
 .b-steps .b-step__title h3 {
   text-align: center;
-  font-size: 36px;
+  font-size: 31px;
   color: var(--main1);
 }
 @media only screen and (max-width: 768px) {

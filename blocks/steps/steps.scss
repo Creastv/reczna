@@ -4,11 +4,8 @@
   display: flex;
   justify-content: space-between;
   //   flex-wrap: wrap;
-  gap: 50px;
-  @media #{$sm} {
-    gap: 10px;
-  }
-  @media #{$sm} {
+
+  @media #{$md} {
     flex-wrap: wrap;
     gap: 0;
   }
@@ -22,15 +19,18 @@
     width: 70%;
     height: 5px;
     background-color: #f4f4f4;
-    @media #{$xs} {
+    @media #{$md} {
       display: none;
     }
   }
   .b-step {
     position: relative;
-    width: 33.33%;
+    width: 16.66%;
     padding: 0 20px;
-    @media #{$xs} {
+    @media #{$md} {
+      width: 50%;
+    }
+    @media #{$sm} {
       width: 100%;
     }
     &:before {
@@ -66,7 +66,7 @@
   }
   .b-step__title h3 {
     text-align: center;
-    font-size: 36px;
+    font-size: 31px;
     color: var(--main1);
     @media #{$sm} {
       font-size: 21px;
