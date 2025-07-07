@@ -186,6 +186,10 @@
       flex-direction: column;
       gap: 20px;
     }
+    #f-org {
+      width: 145px;
+      height: 90px;
+    }
     .f-b-info {
       width: 60%;
       @media #{$md} {

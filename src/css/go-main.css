@@ -961,6 +961,10 @@ body.archive .entry-header h1 {
     gap: 20px;
   }
 }
+#footer .f-brand-info #f-org {
+  width: 145px;
+  height: 90px;
+}
 #footer .f-brand-info .f-b-info {
   width: 60%;
 }
