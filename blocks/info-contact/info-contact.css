@@ -21,7 +21,7 @@
 }
 .b-info-contact .b-info-contact__item {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 10px;
 }
 .b-info-contact .b-info-contact__item .b-info-contact__item__con .label {
