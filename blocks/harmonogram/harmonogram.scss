@@ -1,0 +1,44 @@
+@import "../../src/css/scss/variable";
+
+.harmonogram {
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 50px;
+}
+
+.harmonogram-item {
+  width: calc(25% - 1rem);
+  //   margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f6f6f6;
+  //   border-radius: 8px;
+  //   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  @media #{$lg} {
+    width: calc(33.33% - 1rem);
+  }
+  @media #{$md} {
+    width: calc(50% - 1rem);
+  }
+  @media #{$sm} {
+    width: calc(100% - 1rem);
+  }
+
+  h3 {
+    text-align: center;
+    color: var(--main1);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .harmonogram-opis {
+    font-size: 1rem;
+    color: #232323;
+    line-height: 1.6;
+  }
+}

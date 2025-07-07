@@ -191,6 +191,28 @@ function register_acf_block_types()
     }
   ));
   acf_register_block_type(array(
+    'name'              => 'harmonogram',
+    'title'             => __('harmonogram'),
+    'render_template'   => 'blocks/harmonogram/harmonogram.php',
+    'category'          => 'formatting',
+    'icon' => array(
+      'background' => '#c80100',
+      'foreground' => '#fff',
+      'src' => 'ellipsis',
+    ),
+    'mode'            => 'preview',
+    'keywords'          => array('Kontener', 'harmonogram'),
+    'supports'    => [
+      'align'      => false,
+      'anchor'    => true,
+      'customClassName'  => true,
+      'jsx'       => false,
+    ],
+    'enqueue_assets'    => function () {
+      wp_enqueue_style('go-harmonogram',  get_template_directory_uri() . '/blocks/harmonogram/harmonogram.min.css');
+    }
+  ));
+  acf_register_block_type(array(
     'name'              => 'section-img',
     'title'             => __('section-img'),
     'render_template'   => 'blocks/section-img/section-img.php',
