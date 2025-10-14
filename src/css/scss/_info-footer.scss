@@ -67,3 +67,12 @@
   text-align: center;
   margin-bottom: 20px;
 }
+
+.info-partners__logos--pp {
+  flex-wrap: wrap;
+  gap: 20px;
+  svg {
+    height: 40px;
+    width: 130px;
+  }
+}

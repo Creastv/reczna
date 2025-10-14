@@ -60,7 +60,7 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
 
 
     <?php if ($logosPP) : ?>
-        <div class="info-partners__logos">
+        <div class="info-partners__logos info-partners__logos--pp">
             <?php foreach ($logosPP as $logo) : ?>
                 <div class="item">
                     <?php if ($logo['link']): ?>

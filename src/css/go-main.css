@@ -1200,6 +1200,15 @@ body.archive .entry-header h1 {
   margin-bottom: 20px;
 }
 
+.info-partners__logos--pp {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.info-partners__logos--pp svg {
+  height: 40px;
+  width: 130px;
+}
+
 .error404 .entry-title {
   margin: 20px 0;
   text-align: center;
