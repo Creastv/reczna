@@ -2,9 +2,11 @@
 
 $hastags = get_field('pasek_nad_logotypami', 'options');
 $logos = get_field('logotypy', 'options');
+$logosCD = get_field('logotypy_cd', 'options');
 $desc = get_field('opis_pod_logotypami', 'options');
 
 $logosPP = get_field('logotypy_pp', 'options');
+$logosPPcd = get_field('logotypy_pp_cd', 'options');
 $descPP = get_field('opis_pod_logotypami_pp', 'options');
 
 $logosPM = get_field('logotypy_pm', 'options');
@@ -34,6 +36,22 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
+            <?php if ($logosCD) : ?>
+                <div class="cd"></div>
+                <?php foreach ($logosCD as $logo) : ?>
+                    <div class="item">
+                        <?php if ($logo['link']): ?>
+                            <a href="<?php echo $logo['link']; ?>">
+                            <?php endif; ?>
+                            <?php if ($logo['logo']): ?>
+                                <?php echo $logo['logo']; ?>
+                            <?php endif; ?>
+                            <?php if ($logo['link']) : ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     <?php endif; ?>
     <?php if ($desc) : ?>
@@ -56,6 +74,22 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
+            <?php if ($logosPPcd) : ?>
+                <div class="cd"></div>
+                <?php foreach ($logosPPcd as $logo) : ?>
+                    <div class="item">
+                        <?php if ($logo['link']): ?>
+                            <a href="<?php echo $logo['link']; ?>">
+                            <?php endif; ?>
+                            <?php if ($logo['logo']): ?>
+                                <?php echo $logo['logo']; ?>
+                            <?php endif; ?>
+                            <?php if ($logo['link']) : ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     <?php endif; ?>
     <?php if ($descPP) : ?>
