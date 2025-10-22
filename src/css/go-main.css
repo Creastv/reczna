@@ -546,7 +546,7 @@ body.archive .entry-header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 @media only screen and (max-width: 1400px) {
   .navbar__navigation__list ul {
@@ -561,10 +561,10 @@ body.archive .entry-header h1 {
   }
 }
 .navbar__navigation__list ul li {
-  text-align: center;
   margin: 0;
 }
 .navbar__navigation__list ul li a span {
+  display: block;
   color: var(--white);
   text-align: center;
   font-size: 16px;
@@ -572,6 +572,11 @@ body.archive .entry-header h1 {
   font-weight: 300;
   line-height: 100%;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1400px) {
+  .navbar__navigation__list ul li a span {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .navbar__navigation__list ul li a span {
@@ -595,6 +600,84 @@ body.archive .entry-header h1 {
 .navbar__navigation__list ul .btn-nav a span:hover {
   background-color: var(--main1);
   color: var(--white) !important;
+}
+.navbar__navigation__list ul li.menu-item-has-children > a span {
+  position: relative;
+  padding-right: 18px;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar__navigation__list ul li.menu-item-has-children > a span {
+    padding-right: 0;
+  }
+}
+.navbar__navigation__list ul li.menu-item-has-children > a span:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 15px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+}
+@media only screen and (max-width: 1200px) {
+  .navbar__navigation__list ul li.menu-item-has-children > a span:after {
+    display: none;
+  }
+}
+.navbar__navigation__list li:hover .sub-menu {
+  visibility: visible;
+  transform: translate(0, 5px);
+  transition: all 0.3s ease;
+}
+.navbar__navigation__list li:hover .sub-menu li {
+  opacity: 1;
+}
+.navbar__navigation__list .sub-menu {
+  visibility: hidden;
+  position: absolute;
+  background: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 11px;
+  overflow: hidden;
+  transition: all 0.1s ease;
+  transform: translate(0, 10px);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.01);
+}
+@media only screen and (max-width: 1200px) {
+  .navbar__navigation__list .sub-menu {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background: none;
+    visibility: visible;
+    transform: translate(0, 0px) !important;
+  }
+}
+.navbar__navigation__list .sub-menu li {
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar__navigation__list .sub-menu li {
+    opacity: 1;
+  }
+}
+.navbar__navigation__list .sub-menu li a {
+  font-size: 16px;
+}
+.navbar__navigation__list .sub-menu li a span {
+  color: var(--main2);
+}
+@media only screen and (max-width: 1200px) {
+  .navbar__navigation__list .sub-menu li a span {
+    color: var(--white);
+  }
 }
 
 .navbar__nav {
