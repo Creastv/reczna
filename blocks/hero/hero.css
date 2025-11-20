@@ -91,7 +91,7 @@
 @media only screen and (max-width: 768px) {
   .b-hero .b-hero__wrap {
     min-height: initial;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 350px);
   }
 }
 .b-hero .b-hero__content {
@@ -107,9 +107,10 @@
   flex-direction: column;
   gap: 30px;
 }
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 1300px) {
   .b-hero .b-hero__content {
-    transform: translate(50px, 0);
+    transform: translate(0px, 0);
+    padding-left: 50px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -118,7 +119,7 @@
     left: 50%;
     transform: translate(-50%, 20px);
     text-align: center;
-    padding: 0 15px;
+    padding: 60px 15px 50px 15px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -281,6 +282,12 @@
 .sm-hero ul li {
   margin: 0;
   padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  .sm-hero ul li svg {
+    width: auto;
+    max-height: 30px;
+  }
 }
 .sm-hero ul li path {
   transition: all 0.3s ease;

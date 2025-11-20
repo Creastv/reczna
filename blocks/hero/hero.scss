@@ -74,7 +74,7 @@
     min-height: 430px;
     @media #{$sm} {
       min-height: initial;
-      height: calc(100vh - 150px);
+      height: calc(100vh - 350px);
     }
   }
   .b-hero__content {
@@ -92,15 +92,16 @@
     // @media #{$md} {
     //   transform: translate(0%, 0);
     // }
-    @media #{$md} {
-      transform: translate(50px, 0);
+    @media #{$lg} {
+      transform: translate(0px, 0);
+      padding-left: 50px;
     }
     @media #{$sm} {
       top: 0;
       left: 50%;
       transform: translate(-50%, 20px);
       text-align: center;
-      padding: 0 15px;
+      padding: 60px 15px 50px 15px;
     }
     .wp-block-group {
       @media #{$sm} {
@@ -261,6 +262,12 @@
     li {
       margin: 0;
       padding: 0;
+      svg {
+        @media #{$sm} {
+          width: auto;
+          max-height: 30px;
+        }
+      }
       path {
         transition: all 0.3s ease;
       }
