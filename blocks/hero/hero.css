@@ -286,7 +286,7 @@
 @media only screen and (max-width: 768px) {
   .sm-hero ul li svg {
     width: auto;
-    max-height: 30px;
+    max-height: 22px;
   }
 }
 .sm-hero ul li path {
