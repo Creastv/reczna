@@ -265,7 +265,8 @@
       svg {
         @media #{$sm} {
           width: auto;
-          max-height: 22px;
+          max-height: 33px;
+          display: block;
         }
       }
       path {
